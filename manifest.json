@@ -1,0 +1,26 @@
+{
+	"description": "Demonstrating webRequests",
+	"manifest_version": 2,
+	"name": "webRequest-demo",
+	"version": "1.0",
+
+	"permissions": [
+		"webRequest",
+		"<all_urls>",
+		"storage",
+		"http://*/*",
+    	"https://*/*"
+	],
+
+	"browser_action": {
+		"default_icon": "button.png",
+		"default_title": "Extensao",
+		"default_popup": "extensao.html"
+	},
+  
+	"background": {
+		"scripts": [
+			"background.js"
+		]
+	}
+}
